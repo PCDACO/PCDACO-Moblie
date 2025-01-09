@@ -15,6 +15,9 @@ import {
   PlusCircle,
   MapPin,
   ChevronDown,
+  Edit,
+  Shield,
+  LogOut,
 } from 'lucide-react-native';
 
 import { iconWithClassName } from './iconWithClassName';
@@ -35,6 +38,9 @@ iconWithClassName(DollarSign);
 iconWithClassName(ArrowLeft);
 iconWithClassName(PlusCircle);
 iconWithClassName(MapPin);
+iconWithClassName(Edit);
+iconWithClassName(Shield);
+iconWithClassName(LogOut);
 
 export {
   Bell,
@@ -53,4 +59,7 @@ export {
   PlusCircle,
   MapPin,
   ChevronDown,
+  Edit,
+  Shield,
+  LogOut,
 };

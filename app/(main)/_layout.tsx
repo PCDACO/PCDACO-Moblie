@@ -1,4 +1,3 @@
-import { View, Text } from 'react-native';
 import React from 'react';
 import { Tabs } from 'expo-router';
 import { Home, CalendarDays, Car, CircleUser } from '~/lib/icons/icon';
@@ -14,36 +13,38 @@ const MainLayout = () => {
         name="index"
         options={{
           tabBarIcon: ({ focused }) => (
-            <Home className={focused ? `text-primary` : 'text-foreground'} />
+            <Home className={focused ? `text-primary` : 'text-muted-foreground'} />
           ),
-          tabBarLabel: 'Home',
+          tabBarLabel: 'Trang chủ',
         }}
       />
       <Tabs.Screen
         name="book"
         options={{
           tabBarIcon: ({ focused }) => (
-            <CalendarDays className={focused ? `text-primary` : 'text-foreground'} />
+            <CalendarDays className={focused ? `text-primary` : 'text-muted-foreground'} />
           ),
-          tabBarLabel: 'Book',
+          tabBarLabel: 'Yêu cầu đặt xe',
         }}
       />
       <Tabs.Screen
         name="cars"
         options={{
           tabBarIcon: ({ focused }) => (
-            <Car className={focused ? `text-primary` : 'text-foreground'} />
+            <Car className={focused ? `text-primary` : 'text-muted-foreground'} />
           ),
-          tabBarLabel: 'Cars',
+          tabBarLabel: 'Danh sách xe',
         }}
       />
       <Tabs.Screen
         name="profile"
         options={{
           tabBarIcon: ({ focused }) => (
-            <CircleUser className={focused ? `text-primary` : 'text-foreground'} />
+            <CircleUser className={focused ? `text-primary` : 'text-muted-foreground'} />
           ),
-          tabBarLabel: 'Profile',
+          tabBarLabel: 'Hồ sơ cá nhân',
+          headerTitle: 'Thông tin cá nhân',
+          headerTitleAlign: 'center',
         }}
       />
     </Tabs>
