@@ -18,6 +18,10 @@ import {
   Edit,
   Shield,
   LogOut,
+  ChevronLeft,
+  EllipsisVertical,
+  Dot,
+  Plus,
 } from 'lucide-react-native';
 
 import { iconWithClassName } from './iconWithClassName';
@@ -41,6 +45,10 @@ iconWithClassName(MapPin);
 iconWithClassName(Edit);
 iconWithClassName(Shield);
 iconWithClassName(LogOut);
+iconWithClassName(ChevronLeft);
+iconWithClassName(EllipsisVertical);
+iconWithClassName(Dot);
+iconWithClassName(Plus);
 
 export {
   Bell,
@@ -62,4 +70,8 @@ export {
   Edit,
   Shield,
   LogOut,
+  ChevronLeft,
+  EllipsisVertical,
+  Dot,
+  Plus,
 };

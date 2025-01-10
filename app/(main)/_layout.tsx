@@ -1,8 +1,10 @@
 import React from 'react';
-import { Tabs } from 'expo-router';
-import { Home, CalendarDays, Car, CircleUser } from '~/lib/icons/icon';
+import { Tabs, useRouter } from 'expo-router';
+import { Home, CalendarDays, Car, CircleUser, ChevronLeft } from '~/lib/icons/icon';
+import { TouchableOpacity } from 'react-native';
 
 const MainLayout = () => {
+  const router = useRouter();
   return (
     <Tabs
       screenOptions={{
@@ -34,6 +36,15 @@ const MainLayout = () => {
             <Car className={focused ? `text-primary` : 'text-muted-foreground'} />
           ),
           tabBarLabel: 'Danh sách xe',
+          headerTitle: 'Danh sách xe',
+          headerTitleAlign: 'center',
+          headerLeft: () => {
+            return (
+              <TouchableOpacity className="p-2" onPress={() => router.back()}>
+                <ChevronLeft className="text-primary" />
+              </TouchableOpacity>
+            );
+          },
         }}
       />
       <Tabs.Screen
