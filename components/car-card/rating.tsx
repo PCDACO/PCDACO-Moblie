@@ -1,6 +1,6 @@
+import { Star } from 'lucide-react-native';
 import React from 'react';
 import { View, Text } from 'react-native';
-import { Star } from 'lucide-react-native';
 
 interface RatingProps {
   rating: number;

@@ -1,8 +1,9 @@
 import React from 'react';
 import { View } from 'react-native';
-import CarImage from '~/components/car-card/car-image';
-import CarInfo from '~/components/car-card/car-header';
+
 import CarFooter from '~/components/car-card/car-footer';
+import CarInfo from '~/components/car-card/car-header';
+import CarImage from '~/components/car-card/car-image';
 
 interface CarCardProps {
   car: {

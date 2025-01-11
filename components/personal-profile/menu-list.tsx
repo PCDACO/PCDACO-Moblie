@@ -1,7 +1,8 @@
 import React from 'react';
 import { View } from 'react-native';
-import { Car, CalendarDays, DollarSign, Star, Shield } from '~/lib/icons/icon';
+
 import MenuItem, { MenuItemProps } from '~/components/personal-profile/menu-item';
+import { Car, CalendarDays, DollarSign, Star, Shield } from '~/lib/icons/icon';
 
 const MenuList: React.FC = () => {
   const menuItems: MenuItemProps[] = [

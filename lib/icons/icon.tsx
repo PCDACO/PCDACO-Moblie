@@ -22,6 +22,7 @@ import {
   EllipsisVertical,
   Dot,
   Plus,
+  Layers,
 } from 'lucide-react-native';
 
 import { iconWithClassName } from './iconWithClassName';
@@ -49,6 +50,7 @@ iconWithClassName(ChevronLeft);
 iconWithClassName(EllipsisVertical);
 iconWithClassName(Dot);
 iconWithClassName(Plus);
+iconWithClassName(Layers);
 
 export {
   Bell,
@@ -74,4 +76,5 @@ export {
   EllipsisVertical,
   Dot,
   Plus,
+  Layers,
 };

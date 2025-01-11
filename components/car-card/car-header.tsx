@@ -1,5 +1,6 @@
 import React from 'react';
 import { View, Text, TouchableOpacity } from 'react-native';
+
 import { Edit, EllipsisVertical } from '~/lib/icons/icon';
 
 interface CarHeaderProps {

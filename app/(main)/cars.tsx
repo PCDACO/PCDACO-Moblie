@@ -1,5 +1,6 @@
-import { View, Text, ScrollView, TouchableOpacity } from 'react-native';
 import React from 'react';
+import { View, ScrollView, TouchableOpacity } from 'react-native';
+
 import CarCard from '~/components/car-card';
 import { Plus } from '~/lib/icons/icon';
 

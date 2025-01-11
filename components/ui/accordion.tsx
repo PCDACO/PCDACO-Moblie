@@ -12,8 +12,9 @@ import Animated, {
   useDerivedValue,
   withTiming,
 } from 'react-native-reanimated';
-import { ChevronDown } from '~/lib/icons/icon';
+
 import { TextClassContext } from '~/components/ui/text';
+import { ChevronDown } from '~/lib/icons/icon';
 import { cn } from '~/lib/utils';
 
 const Accordion = React.forwardRef<AccordionPrimitive.RootRef, AccordionPrimitive.RootProps>(
@@ -33,7 +34,7 @@ Accordion.displayName = AccordionPrimitive.Root.displayName;
 const AccordionItem = React.forwardRef<AccordionPrimitive.ItemRef, AccordionPrimitive.ItemProps>(
   ({ className, value, ...props }, ref) => {
     return (
-      <Animated.View className={'overflow-hidden'} layout={LinearTransition.duration(200)}>
+      <Animated.View className="overflow-hidden" layout={LinearTransition.duration(200)}>
         <AccordionPrimitive.Item
           ref={ref}
           className={cn('border-b border-border', className)}
@@ -74,7 +75,7 @@ const AccordionTrigger = React.forwardRef<
             {/* @ts-ignore */}
             <>{children}</>
             <Animated.View style={chevronStyle}>
-              <ChevronDown size={18} className={'shrink-0 text-foreground'} />
+              <ChevronDown size={18} className="shrink-0 text-foreground" />
             </Animated.View>
           </Trigger>
         </AccordionPrimitive.Trigger>

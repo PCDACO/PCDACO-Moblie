@@ -1,10 +1,11 @@
-import { View, Text } from 'react-native';
-import React from 'react';
-import BaseInfoUser from '~/components/personal-profile/base-info-user';
-import StatsCard from '~/components/personal-profile/stats-card';
-import MenuList from '~/components/personal-profile/menu-list';
-import { Button } from '~/components/ui/button';
 import { LogOut } from 'lucide-react-native';
+import React from 'react';
+import { View, Text } from 'react-native';
+
+import BaseInfoUser from '~/components/personal-profile/base-info-user';
+import MenuList from '~/components/personal-profile/menu-list';
+import StatsCard from '~/components/personal-profile/stats-card';
+import { Button } from '~/components/ui/button';
 
 const ProfileScreen = () => {
   return (

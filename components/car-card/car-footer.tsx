@@ -1,5 +1,6 @@
-import { View, Text } from 'react-native';
 import React from 'react';
+import { View, Text } from 'react-native';
+
 import Rating from '~/components/car-card/rating';
 import StatusBadge from '~/components/car-card/status-badge';
 

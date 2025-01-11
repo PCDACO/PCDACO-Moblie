@@ -1,7 +1,10 @@
-import React from 'react';
 import { Tabs, useRouter } from 'expo-router';
-import { Home, CalendarDays, Car, CircleUser, ChevronLeft } from '~/lib/icons/icon';
-import { TouchableOpacity } from 'react-native';
+import React from 'react';
+import { TouchableOpacity, View } from 'react-native';
+
+import HeaderProfile from '~/components/header-home-screen';
+import ButtonIcon from '~/components/icon-button/icon-button';
+import { Home, CalendarDays, Car, CircleUser, ChevronLeft, Bell } from '~/lib/icons/icon';
 
 const MainLayout = () => {
   const router = useRouter();
@@ -18,6 +21,21 @@ const MainLayout = () => {
             <Home className={focused ? `text-primary` : 'text-muted-foreground'} />
           ),
           tabBarLabel: 'Trang chủ',
+          headerTitle: '',
+          headerLeft: () => {
+            return (
+              <View className="px-4">
+                <HeaderProfile />
+              </View>
+            );
+          },
+          headerRight: () => {
+            return (
+              <View className="px-1">
+                <ButtonIcon icon={Bell} className="bg-background" />
+              </View>
+            );
+          },
         }}
       />
       <Tabs.Screen
