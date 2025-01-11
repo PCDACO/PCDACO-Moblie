@@ -45,6 +45,18 @@ const MainLayout = () => {
             <CalendarDays className={focused ? `text-primary` : 'text-muted-foreground'} />
           ),
           tabBarLabel: 'Yêu cầu đặt xe',
+          headerTitle: 'Yêu cầu đặt xe',
+          headerTitleAlign: 'center',
+          headerTitleStyle: {
+            fontWeight: 'bold',
+          },
+          headerLeft: () => {
+            return (
+              <TouchableOpacity className="p-2" onPress={() => router.back()}>
+                <ChevronLeft className="text-primary" />
+              </TouchableOpacity>
+            );
+          },
         }}
       />
       <Tabs.Screen
@@ -56,6 +68,9 @@ const MainLayout = () => {
           tabBarLabel: 'Danh sách xe',
           headerTitle: 'Danh sách xe',
           headerTitleAlign: 'center',
+          headerTitleStyle: {
+            fontWeight: 'bold',
+          },
           headerLeft: () => {
             return (
               <TouchableOpacity className="p-2" onPress={() => router.back()}>
@@ -74,6 +89,16 @@ const MainLayout = () => {
           tabBarLabel: 'Hồ sơ cá nhân',
           headerTitle: 'Thông tin cá nhân',
           headerTitleAlign: 'center',
+          headerTitleStyle: {
+            fontWeight: 'bold',
+          },
+          headerLeft: () => {
+            return (
+              <TouchableOpacity className="p-2" onPress={() => router.back()}>
+                <ChevronLeft className="text-primary" />
+              </TouchableOpacity>
+            );
+          },
         }}
       />
     </Tabs>
