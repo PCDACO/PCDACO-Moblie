@@ -59,16 +59,14 @@ const CarsScreen = () => {
   return (
     <View>
       <ScrollView className="p-4 ">
-        <View className="gap-4 mb-10">
+        <View className="mb-10 gap-4">
           {cars.map((car, index) => (
             <CarCard key={index} car={car} />
           ))}
         </View>
       </ScrollView>
 
-      
-
-      <TouchableOpacity className="absolute p-4 bg-blue-500 rounded-full bottom-4 right-4">
+      <TouchableOpacity className="absolute bottom-4 right-4 rounded-full bg-blue-500 p-4">
         <Plus className="text-background" size={16} />
       </TouchableOpacity>
     </View>
