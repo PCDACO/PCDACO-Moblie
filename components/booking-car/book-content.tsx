@@ -1,6 +1,7 @@
-import { View, Text } from 'react-native';
-import React from 'react';
 import { FontAwesome5 } from '@expo/vector-icons';
+import React from 'react';
+import { View, Text } from 'react-native';
+
 import { DateFormat, formatDateToString } from '~/lib/format';
 
 interface BookContentProps {

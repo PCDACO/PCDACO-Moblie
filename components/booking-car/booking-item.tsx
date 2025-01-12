@@ -1,8 +1,9 @@
 import React from 'react';
-import Card from '~/components/home-screen/card';
-import BookHeader from '~/components/booking-car/book-header';
+
 import BookContent from '~/components/booking-car/book-content';
 import BookFooter from '~/components/booking-car/book-footer';
+import BookHeader from '~/components/booking-car/book-header';
+import Card from '~/components/home-screen/card';
 
 interface BookingItemProps {
   booking: {

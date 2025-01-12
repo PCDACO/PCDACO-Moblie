@@ -1,6 +1,7 @@
 import React from 'react';
 import { FlatList, View } from 'react-native';
-import BookingList from '~/components/booking-car/booking-item';
+import BookingItem from '~/components/booking-car/booking-item';
+
 import OptionStatus from '~/components/booking-car/option-status';
 
 const BookScreen = () => {
@@ -33,7 +34,7 @@ const BookScreen = () => {
       <View className="gap-2 p-4">
         <FlatList
           data={bookingList}
-          renderItem={({ item }) => <BookingList booking={item} />}
+          renderItem={({ item }) => <BookingItem booking={item} />}
           keyExtractor={(item) => item.userName}
           ItemSeparatorComponent={() => <View className="h-2" />}
         />
