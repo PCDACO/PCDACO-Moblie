@@ -58,7 +58,7 @@ const CarsScreen = () => {
 
   return (
     <View>
-      <ScrollView className="bg-gray-100 p-4 ">
+      <ScrollView className="p-4 ">
         <View className="mb-10 gap-4">
           {cars.map((car, index) => (
             <CarCard key={index} car={car} />
