@@ -7,6 +7,7 @@ import { Plus } from '~/lib/icons/icon';
 const CarsScreen = () => {
   const cars = [
     {
+      id: '1',
       image: 'https://via.placeholder.com/80',
       totalImages: 5,
       name: 'Honda Civic 2024',
@@ -19,6 +20,7 @@ const CarsScreen = () => {
       statusBooking: 'Hiện đang cho thuê ',
     },
     {
+      id: '2',
       image: 'https://via.placeholder.com/80',
       totalImages: 5,
       name: 'BMW X5',
@@ -31,6 +33,7 @@ const CarsScreen = () => {
       statusBooking: 'Lần cho thuê gần nhất: 2 tháng trước',
     },
     {
+      id: '3',
       image: 'https://via.placeholder.com/80',
       totalImages: 5,
       name: 'BMW X5',
@@ -43,6 +46,7 @@ const CarsScreen = () => {
       statusBooking: 'Lần cho thuê gần nhất: 2 tháng trước',
     },
     {
+      id: '4',
       image: 'https://via.placeholder.com/80',
       totalImages: 5,
       name: 'BMW X5',

@@ -60,24 +60,13 @@ const MainLayout = () => {
         }}
       />
       <Tabs.Screen
-        name="cars"
+        name="(cars)"
         options={{
           tabBarIcon: ({ focused }) => (
             <Car className={focused ? `text-primary` : 'text-muted-foreground'} />
           ),
           tabBarLabel: 'Danh sách xe',
-          headerTitle: 'Danh sách xe',
-          headerTitleAlign: 'center',
-          headerTitleStyle: {
-            fontWeight: 'bold',
-          },
-          headerLeft: () => {
-            return (
-              <TouchableOpacity className="p-2" onPress={() => router.back()}>
-                <ChevronLeft className="text-primary" />
-              </TouchableOpacity>
-            );
-          },
+          headerShown: false,
         }}
       />
       <Tabs.Screen
